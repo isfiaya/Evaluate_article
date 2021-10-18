@@ -28,7 +28,7 @@ const handleSubmit = async (e) => {
 }
 // REQUEST TO POST DATA TO THE SERVER
 const getData = async () => {
-  const response = await fetch('http://localhost:4000/userurl', {
+  const response = await fetch('https://evaluate-articles.herokuapp.com/userurl', {
     method: "POST",
     headers: {
       'Accept': 'application/json',
