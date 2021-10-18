@@ -43,4 +43,4 @@ const getData = async () => {
   return data
 }
 
-export { handleSubmit }
+export { handleSubmit, getData }
