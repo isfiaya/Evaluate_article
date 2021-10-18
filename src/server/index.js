@@ -3,10 +3,9 @@ const cors = require('cors');
 const FormData = require('form-data');
 const fetch = require('node-fetch');
 const dotenv = require('dotenv');
-dotenv.config();
 const api_key = process.env.API_KEY;
 const app = express();
-
+dotenv.config();
 //Here we are configuring express to use body-parser as middle-ware.
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -34,7 +33,7 @@ app.post('/userurl', async (req, res) => {
 })
 
 // Setup Server
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
