@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 2;
+  padding: 2rem;
+}
+
+section {
+  max-width: 800px;
+  margin: 50px auto;
+  h3 {
+    font-size: 1.3rem;
+    color: #34495e;
+    text-align: center;
+  }
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

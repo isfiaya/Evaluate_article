@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+</head>
+
+<body>
+  <header>
+    <div class="">
+      Udacity
+    </div>
+    <div class="">
+      Sentiment Analysis
+    </div>
+  </header>
+  <main>
+    <section class="form">
+      <form class="" onsubmit="return handleSubmit(event)">
+        <input id="url" type="text" name="input" value="" placeholder="URL">
+        <button type="submit" onclick="return Client.handleSubmit(event)" id="btn-submit">Submit</button>
+        <div class="loader" id="loader"></div>
+      </form>
+    </section>
+    <section>
+      <h3 class="title">Form Results:</h3>
+      <div id="results" class="results">
+        <div class="result">
+          <span class="result__key">Model:</span>
+          <span class="result__value" id="model"></span>
+        </div>
+        <div class="result">
+          <span class="result__key">Agreement:</span>
+          <span class="result__value" id="agreement"></span>
+        </div>
+        <div class="result">
+          <span class="result__key">Confidence:</span>
+          <span class="result__value" id="confidence"></span>
+        </div>
+        <div class="result">
+          <span class="result__key">Irony:</span>
+          <span class="result__value" id="irony"></span>
+        </div>
+        <div class="result">
+          <span class="result__key">Subjectivity:</span>
+          <span class="result__value" id="subjectivity"></span>
+        </div>
+        <div class="result">
+          <span class="result__key">Score:</span>
+          <span class="result__value" id="score_tag"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>developed by © Aymen Isfiaya</p>
+  </footer>
+</body>
+
+</html>
